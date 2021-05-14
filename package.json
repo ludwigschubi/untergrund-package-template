@@ -1,0 +1,15 @@
+{
+  "name": "untergrund-package-generator",
+  "version": "0.0.0",
+  "description": "A library to generate packages from shex or rdf namespaces",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
