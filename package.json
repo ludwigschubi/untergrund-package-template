@@ -1,15 +1,20 @@
 {
-  "name": "untergrund-package-generator",
-  "version": "0.0.0",
-  "description": "A library to generate packages from shex or rdf namespaces",
-  "main": "index.js",
+  "name": "untergrund-package-template",
+  "version": "0.0.1",
+  "description": "A template for a schema package",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "shex-codegen generate && tsc",
+    "build": "shex-codegen generate && tsc"
   },
-  "author": "",
+  "author": "Ludwig Schubert",
   "license": "AGPL-3.0",
   "devDependencies": {
+    "shex-codegen": "^0.3.10",
     "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "rdflib": "^2.2.0",
+    "shex-methods": "^0.1.21"
   }
 }
