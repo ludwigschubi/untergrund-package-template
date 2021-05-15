@@ -2,7 +2,7 @@
 schema: "schema.shex"
 generates:
   # this will be the path of the generated file. It has to end with .ts
-  src/index.ts:
+  index.ts:
     # the visitors to visit the schema with
     - typescript
     - typescript-methods
